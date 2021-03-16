@@ -15,16 +15,18 @@ class _DetailsState extends State<Details> {
     return Scaffold(
       key: _key,
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        centerTitle: true,
         title: Text('Details'),
         actions: [
-          IconButton(
-            icon: Icon(Icons.copy),
-            onPressed: () {
-              FlutterClipboard.copy(widget.text).then((value) => _key
-                  .currentState
-                  .showSnackBar(new SnackBar(content: Text('Copied'))));
-            },
-          )
+          // IconButton(
+          //   icon: Icon(Icons.copy),
+          //   onPressed: () {
+          //     FlutterClipboard.copy(widget.text).then((value) => _key
+          //         .currentState
+          //         .showSnackBar(new SnackBar(content: Text('Copied'))));
+          //   },
+          // )
         ],
       ),
       body: Container(
